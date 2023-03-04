@@ -1,10 +1,21 @@
 body {
     margin: 0px;
 }
+
+.wrapper { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
 .main-content {
     display: flex;
+    width: 60vw;
+    justify-content: space-around;
 }
 
 .panels {
+    height: 30vh;
+    width: 30vh;
     border : 1px solid black;
 }
