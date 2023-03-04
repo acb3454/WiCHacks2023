@@ -10,7 +10,9 @@ body {
 }
 
 #navbar {
-    height:100px;
+    display: flex;
+    flex-direction: column;
+    height:auto;
     width: 100vw;
     padding: 20px;
     position: fixed;
@@ -22,6 +24,12 @@ body {
 
 #navbar img {
     height: 70px;
+    position: absolute;
+    left: 40px;
+}
+
+#nav-text h1{
+    font-size: 7em;
 }
 
 .main-content {
