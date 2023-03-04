@@ -29,7 +29,7 @@ function addTask() {
     }
 }
 
-//grey out line when check box is clicked
+//grey out textNode line when checkbox is clicked
 function greyoutLabel() {
     const c = document.getElementsByTagName("checkbox");
     //grab the textnode thats in the label with this checkbox
