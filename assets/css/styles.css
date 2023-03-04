@@ -28,11 +28,17 @@ body {
     height: 70px;
     position: absolute;
     left: 40px;
+    transition: .4s;
 }
 
 #nav-text h1{
     font-family: 'Abril Fatface', serif;
     font-size: 7em;
+    transition: .4s;
+}
+
+#nav-text h2 {
+    transition: .4s;
 }
 
 .main-content {

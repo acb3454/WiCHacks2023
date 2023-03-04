@@ -51,14 +51,14 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("navbar").style.padding = "5px 10px";
     document.getElementById("nav-text-h1").style.fontSize = "2em";
     document.getElementById("nav-text-h2").style.display = "none";
     document.getElementById("logo").style.fontSize = "25px";
   } else {
-    document.getElementById("navbar").style.padding = "60px 10px";
+    document.getElementById("navbar").style.padding = "20px 10px";
     document.getElementById("nav-text-h1").style.fontSize = "3em";
     document.getElementById("nav-text-h2").style.display = "";
-    document.getElementById("logo").style.fontSize = "55px";
+    document.getElementById("logo").style.fontSize = "35px";
   }
 }
