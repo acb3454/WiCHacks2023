@@ -1,3 +1,4 @@
+//adds a task to the list
 function addTask() {
     //gets the task input value and puts it in a text node
     const task = document.getElementById('task1').value;
@@ -27,14 +28,19 @@ function addTask() {
     }
 }
 
+// adjusts the size and formatting ofr navbar on scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementById("navbar").style.padding = "30px 10px";
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.getElementById("navbar").style.padding = "10px 10px";
+    document.getElementById("nav-text-h1").style.fontSize = "2em";
+    document.getElementById("nav-text-h2").style.display = "none";
     document.getElementById("logo").style.fontSize = "25px";
   } else {
-    document.getElementById("navbar").style.padding = "80px 10px";
-    document.getElementById("logo").style.fontSize = "35px";
+    document.getElementById("navbar").style.padding = "60px 10px";
+    document.getElementById("nav-text-h1").style.fontSize = "3em";
+    document.getElementById("nav-text-h2").style.display = "";
+    document.getElementById("logo").style.fontSize = "55px";
   }
 }
