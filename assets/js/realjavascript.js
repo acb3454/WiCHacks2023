@@ -9,4 +9,5 @@ function addTask() {
     const current_task = document.getElementById('task-input-things');
     current_task.appendChild(p);
     console.log("appended task as child in input");
+    document.getElementById('task1').value = '';
 }
