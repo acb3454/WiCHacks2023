@@ -7,7 +7,7 @@ function addTask() {
     c.setAttribute("type", "checkbox");
     c.setAttribute("label", newtask);
     console.log("added checkbox of new task" + p);
-    //c.appendChild(newtask);
+    c.appendChild(newtask);
     const current_task = document.getElementById('task-input-things');
     current_task.appendChild(c);
     console.log("appended task as child in input");
