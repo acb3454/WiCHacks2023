@@ -8,7 +8,7 @@ function addTask() {
     //make checkbox element
     const c = document.createElement("INPUT");
     c.setAttribute("type", "checkbox");
-    c.setAttribute("name", newtask);
+    c.setAttribute("name", task);
     console.log("added checkbox of new task " + c);
     c.appendChild(newtask);
     //put current task on the list
