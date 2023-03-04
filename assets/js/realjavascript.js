@@ -1,19 +1,20 @@
 function addTask() {
     //gets the task input value
     const task = document.getElementById('task1').value;
+    newtask = document.createTextNode(task);
     console.log("got new task " + task);
-
-    //put task in text node
-    const newtask = document.createElement("label");
-    newtask.innerHTML = task;
-    console.log("made label of task " + newtask);
 
     //make checkbox element
     const checkbox = document.createElement("INPUT");
-    checkbox.setAttribute("type", "checkbox");
-    checkbox.setAttribute("id", "task");
-    console.log("added checkbox of new task " + checkbox);
-    checkbox.appendChild(newtask);
+    checkbox.type = "checkbox";
+    checkbox.id = "task";
+
+    //put task in label
+    const tasklabel = document.createElement("label");
+    tasklabel.htmlFor = "checkbox";
+    tasklabel.appendChild(newtask);
+    
+    checkbox.appendChild(tasklabel);
 
     //put current task on the list
     const tasklist = document.getElementById('task-input-things');
