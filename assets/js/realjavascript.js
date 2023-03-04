@@ -13,6 +13,8 @@ function addTask() {
     const tasklabel = document.createElement("label");
     tasklabel.appendChild(checkbox);
     tasklabel.appendChild(newtask);
+    tasklabel.htmlFor = "checkbox";
+    tasklabel.appendChild(newtask, checkbox);
     
    
     //put tasklabel label on the list
