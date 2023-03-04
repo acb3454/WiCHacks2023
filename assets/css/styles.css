@@ -1,5 +1,6 @@
 body {
     margin: 0px;
+    text-align: center;
 }
 
 .wrapper { 
@@ -20,5 +21,6 @@ body {
     height: 50vh;
     width: 50vh;
     margin: 60px;
-    border : 3px solid purple;
+    border : 3px solid #800080;
+    background-color: #bf9bebc5;
 }
