@@ -40,6 +40,10 @@ function greyoutLabel() {
     }
 }
 
+function clickoutside(){
+  document.getElementById('outsidebutton').style.opacity = 1;
+}
+
 
 
 // adjusts the size and formatting of navbar on scroll
