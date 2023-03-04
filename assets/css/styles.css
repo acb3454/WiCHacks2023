@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+}
+.main-content {
+    display: flex;
+}
+
+.panels {
+    border : 1px solid black;
+}
