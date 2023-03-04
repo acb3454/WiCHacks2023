@@ -11,12 +11,13 @@ function addTask() {
         const checkbox = document.createElement("INPUT");
         checkbox.type = "checkbox";
         checkbox.id = "task";
+        checkbox.onclick = "greyoutLabel";
+        // event listeners
 
         //put task text node and checkbox in label
         const tasklabel = document.createElement("label");
         tasklabel.appendChild(checkbox);
         tasklabel.appendChild(newtask);
-    
     
         //put tasklabel label on the list
         const tasklist = document.getElementById('task-input-things');
@@ -28,7 +29,20 @@ function addTask() {
     }
 }
 
-// adjusts the size and formatting ofr navbar on scroll
+//grey out line when check box is clicked
+function greyoutLabel() {
+    const c = document.getElementsByTagName("checkbox");
+    //grab the textnode thats in the label with this checkbox
+    if (c.checked) {
+        console.log("a checkbox was clicked!");
+        //change packground color and, strikethrough, and font color
+
+    }
+}
+
+
+
+// adjusts the size and formatting of navbar on scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
