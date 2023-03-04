@@ -66,6 +66,21 @@ body {
     border-bottom: 1px solid black;
 }
 
+.button{
+    background-color: #800080;
+    color:white;
+    padding: 16px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.button:hover {
+    opacity: 1
+}
+
 
 
 /* color swatches */
