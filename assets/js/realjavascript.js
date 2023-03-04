@@ -40,8 +40,8 @@ function greyoutLabel() {
     }
 }
 
-function clickoutside(){
-  document.getElementById('outsidebutton').style.opacity = 1;
+function clickoutside(element){
+  element.style.opacity = 1;
 }
 
 
