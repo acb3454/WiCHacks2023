@@ -4,24 +4,27 @@ function addTask() {
     newtask = document.createTextNode(task);
     console.log("got new task " + task);
 
-    //make checkbox element
-    const checkbox = document.createElement("INPUT");
-    checkbox.type = "checkbox";
-    checkbox.id = "task";
+    //only make a new checkbox and label if there is stuff to submit
+    if ( task != "") {
+        //make checkbox element
+        const checkbox = document.createElement("INPUT");
+        checkbox.type = "checkbox";
+        checkbox.id = "task";
 
-    //put task text node and checkbox in label
-    const tasklabel = document.createElement("label");
-    tasklabel.appendChild(checkbox);
-    tasklabel.appendChild(newtask);
-   
-   
-    //put tasklabel label on the list
-    const tasklist = document.getElementById('task-input-things');
-    tasklist.appendChild(tasklabel);
-    console.log("appended task as child in input");
+        //put task text node and checkbox in label
+        const tasklabel = document.createElement("label");
+        tasklabel.appendChild(checkbox);
+        tasklabel.appendChild(newtask);
+    
+    
+        //put tasklabel label on the list
+        const tasklist = document.getElementById('task-input-things');
+        tasklist.appendChild(tasklabel);
+        console.log("appended task as child in input");
 
-    //clear input box
-    document.getElementById('task1').value = '';
+        //clear input box
+        document.getElementById('task1').value = '';
+    }
 }
 
 window.onscroll = function() {scrollFunction()};
