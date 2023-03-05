@@ -94,25 +94,23 @@ body {
 
 
 /* color swatches */
-.dkgn {
+.color-swatches {
+    height:50px;
+}
+#dkgn {
     background-color:#499E61; 
-    height:50px;
 }
-.ltpl {
+#ltpl {
     background-color:#BF9BEB;
-    height:50px;
 }
-.ltgn {
+#ltgn {
     background-color:#83EBA1;
-    height:50px;
 }
-.tn {
+#tn {
     background-color:#EBB66C;
-    height:50px;
 }
-.brn {
+#brn {
     background-color: #9E7E51;
-    height:50px;
 }
 
 
