@@ -20,7 +20,7 @@ body {
     flex-direction: column;
     height:auto;
     width: 100vw;
-    /* padding: 20px; */
+    padding: 20px, 10px;
     position: fixed;
     top: 0;
     z-index: 99;
@@ -31,14 +31,14 @@ body {
 #navbar img {
     height: 150px;
     position: absolute;
-    left: 20px;
-    top: 120px;
+    left: 60px;
+    top: 40px;
     transition: .4s;
 }
 
 #nav-text h1{
     font-family: 'Abril Fatface', serif;
-    font-size: 5.5em;
+    font-size: 3em;
     transition: .4s;
 }
 

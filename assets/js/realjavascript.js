@@ -153,10 +153,11 @@ function scrollFunction() {
 
 
   } else { 
+    //expanded version
     //if the page has scrolled once but is back at the top. still overrides the initial styles
     document.getElementById("navbar").style.padding = "20px 10px";
     document.getElementById("nav-text-h1").style.fontSize = "3em";
-    document.getElementById("nav-text-h2").style.display = "";
+    document.getElementById("nav-text-h2").style.display = ""; //shows the h2
     document.getElementById("logo").style.height = "150px";
     document.getElementById("logo").style.left = "60px";
     document.getElementById("logo").style.top = "40px";
