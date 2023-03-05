@@ -88,6 +88,29 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
 }
+
+/*Carousel things*/
+.carouselbutton{
+  background-color: #bf9bebc5;
+  border: none;
+  color:#800080;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.carouseltext {
+  color: #800080;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 /* Panel 4 */
 .outsidebutton{
     background-color: #800080;
