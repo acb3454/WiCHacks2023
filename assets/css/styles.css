@@ -90,6 +90,19 @@ body {
 }
 
 /*Carousel things*/
+
+/*formatting for text in carousel buttons*/
+.carouseltext {
+  color: #800080;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
 /*formatting for carousel buttons*/
 .carouselbutton{
   background-color: #bf9bebc5;
@@ -102,16 +115,7 @@ body {
   text-align: center;
 }
 
-/*formatting for text in carousel buttons*/
-.carouseltext {
-  color: #800080;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
+
 
 /* Panel 4 */
 .outsidebutton{
