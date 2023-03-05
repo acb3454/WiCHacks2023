@@ -61,9 +61,16 @@ function doplantsparkle() {
   // Change photo in panel 2
   console.log("doing plant sparkle things");
   const flowerphoto = document.getElementById("flowerImage");
+  const originalflower = flowerphoto.src;
   console.log("current source " + flowerphoto.src);
+
   flowerphoto.src = "assets/sprites/sparkle.png";
   console.log("new source " + flowerphoto.src);
+  // Wait for 0.6 seconds and switch back to original photo
+  
+  setTimeout(function() {
+    flowerphoto.src = originalflower + "?" + Date.now();
+  }, 600);
 }
 
 
