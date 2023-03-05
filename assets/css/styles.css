@@ -318,12 +318,30 @@ font-family: Poppins, sans-serif;
   }
 
   /* Resources page */
+  .main-content-resources{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 90vw;
+    padding: 70px;
+  }
+
   li{
     font-size: 18px;
     font-family: Poppins, sans-serif;
   }
 
   /* People page */
+
+  .main-content.people{
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 90vw;
+    padding: 70px;
+  }
   .peopleLinks{
     width: 100%;
     font-size: 18px;
