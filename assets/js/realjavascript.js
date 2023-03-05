@@ -57,10 +57,15 @@ function clickoutside(element){
   element.style.opacity = 1;
 }
 
-
-function doplantsparkle(){
+function doplantsparkle() {
+  // Change photo in panel 2
   console.log("doing plant sparkle things");
+  const flowerphoto = document.getElementById("flowerImage");
+  console.log("current source " + flowerphoto.src);
+  flowerphoto.src = "assets/sprites/sparkle.png";
+  console.log("new source " + flowerphoto.src);
 }
+
 
 // adjusts the size and formatting of navbar on scroll
 window.onscroll = function() {scrollFunction()};
