@@ -84,7 +84,9 @@ function doplantsparkle() {
 function changeplant(element){
   //if the flower in carousel is clicked
   //set the img src in flowerphoto to the carousel img src
-  
+  console.log(element);
+  const image = element.querySelector('img');
+  const imageSrc = image.getAttribute('src');
   // Change plant photo
   console.log("switching out the plant");
   //get current flower photo
@@ -92,7 +94,7 @@ function changeplant(element){
   console.log("current source " + flowerphoto.src);
 
   //set the panel 2 main flower img src to the src from input img
-  flowerphoto.src = element.src;
+  flowerphoto.src = image.src;
   console.log("new source " + flowerphoto.src);
 
   
