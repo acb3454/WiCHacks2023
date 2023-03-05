@@ -25,9 +25,10 @@ body {
 }
 
 #navbar img {
-    height: 70px;
+    height: 150px;
     position: absolute;
-    left: 40px;
+    left: 20px;
+    top: 120px;
     transition: .4s;
 }
 
