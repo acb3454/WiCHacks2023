@@ -199,4 +199,5 @@ function scrollFunction() {
     dots[slideIndex-1].className += " active";
   }
 
+
 }

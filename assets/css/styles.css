@@ -374,75 +374,52 @@ footer {
     background-color: #bf9bebc5;
 }
 
-
- /* these are the tablet rules */
-@media only screen and (max-width:1200px){
-    #navbar {
-      padding: 5px;
-  }
-
-  #navbar img {
-      height: 150px;
-      left: 15px;
-      top: 70px;
-  }
-
-  #nav-text h1{
-      font-size: 4em;
-  }
-
-  #nav-text h2{
-    font-size: 1.2em;
-  }
-
-  .main-content {
-    width: 100vw;
-    margin: 0;
-    padding-top: 50px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .panels {
-    margin: 20;
-  }
-
-  #colors {
-    height: 30vh;
-  }
+.a-btn{
+  background:#499E61;
+  padding-left:20px;
+  padding-right:80px;
+  height:38px;
+  position:relative;
+  border:1px solid #5d81ab;
+  border-radius:20px;
+  float:left;
+  clear:both;
+  margin:10px 0px;
+  text-decoration:none;
+  /*  check out the line below */
+  transition:all 0.3s linear;
+}
+.a-btn-text{
+  padding-top:5px;
+  display:block;
+  font-size:16px;
+  color:black;
 
 }
-
-
- /* these are the tablet rules AND IN portrait mode */
-@media only screen and (max-width:1200px) and (orientation:portrait){
-  #navbar {
-    padding: 5px;
-  }
-
-  #navbar img {
-      height: 100px;
-      left: 30px;
-      top: 50px;
-  }
-
-  #nav-text h1{
-      font-size: 2.5em;
-  }
-
-  #nav-text h2{
-    font-size: 1.5em;
-  }
-
-  #colors {
-    height: 30vh;
-  }
+.a-btn-slide-text{
+  position:absolute;
+  top:0px;
+  right:52px;
+  width:0px;
+  background:#63707e;
+  color:#fff;
+  font-size:12px;
+  white-space:nowrap;
+  text-transform:uppercase;
+  text-indent:10px;
+  overflow:hidden;
+  line-height:38px;
+  /*  check out the line below */
+  transition:width 0.3s linear;
 }
 
-/* these are the large tablet rules in landscape. width still applies to the short side of the phone though*/
-@media only screen and (max-width:800px) {}
-
-/* these are the phone rules in lanscape. */
-@media only screen and (max-width:415px) and (orientation:portrait){
-
+/* above to make it look good, below to make it work! */
+.a-btn:hover{
+  padding-right:180px;
+  background:#b2efc3;
 }
+
+.a-btn:hover .a-btn-slide-text{
+  width:100px;
+}
+
