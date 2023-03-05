@@ -90,6 +90,7 @@ body {
 }
 
 /*Carousel things*/
+/*formatting for carousel buttons*/
 .carouselbutton{
   background-color: #bf9bebc5;
   border: none;
@@ -101,6 +102,7 @@ body {
   text-align: center;
 }
 
+/*formatting for text in carousel buttons*/
 .carouseltext {
   color: #800080;
   font-size: 15px;
