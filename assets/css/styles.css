@@ -99,9 +99,33 @@ body {
     text-align: center;
 }
 
-.button:hover {
-    opacity: 1
+/* Button and Input (Panel 1)*/
+#task1{
+padding: 6px 12px;
+font-family: Poppins, sans-serif;
 }
+
+
+
+#inputtask
+{
+    font-family: Poppins, sans-serif;
+    background-color: #800080; 
+    border: none;
+    color: black;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+#inputtask:hover{
+  font-family: Poppins, sans-serif;
+  background-color: #773577; 
+ }
 
 .waterimage {
     width: 70px;
