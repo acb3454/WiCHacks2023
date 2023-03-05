@@ -87,6 +87,7 @@ function changeplant(element){
   
   // Change plant photo
   console.log("switching out the plant");
+  //get current flower photo
   const flowerphoto = document.getElementById("flowerImage");
   console.log("current source " + flowerphoto.src);
 
@@ -112,6 +113,7 @@ function doplantwater() {
     flowerphoto.src = originalflower + "?" + Date.now();
   }, 600);
 }
+
 
 function doplantsun() {
   // Change photo in panel 2
@@ -142,7 +144,7 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "75px";
     document.getElementById("logo").style.left = "30px";
     document.getElementById("logo").style.top = "15px";
-    document.getElementById("colors-swatches").style.height = "1vh";
+    document.getElementById("color-swatches").style.height = "1vh";
 
 
   } else { 
@@ -153,7 +155,7 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "150px";
     document.getElementById("logo").style.left = "60px";
     document.getElementById("logo").style.top = "40px";
-    document.getElementById("colors-swatches").style.height = "55px";
+    document.getElementById("color-swatches").style.height = "55px";
   }
 
 
