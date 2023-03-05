@@ -55,6 +55,9 @@ function greyoutLabel() {
 
 //function to handle water tracking
 function addwater(element){
+  console.log(element);
+  const image = element.querySelector('img');
+  image.src="assets/media/halfemptywater.png"
   element.style.opacity = 1;
   doplantwater();
 }
