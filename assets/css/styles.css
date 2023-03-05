@@ -51,6 +51,10 @@ body {
   text-decoration: none;
 }
 
+#meet-team:hover {
+  font-weight: 700;
+}
+
 .main-content {
     width: 90vw;
     padding: 70px;
