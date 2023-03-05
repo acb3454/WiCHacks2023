@@ -66,8 +66,16 @@ body {
 #panel3{grid-area: panel3;}
 footer{grid-area: footer;}
 
+#panel1{
+  padding-left: 0;
+  margin: 0;
+}
+
+
 #panel3{
   width: 90vw;
+  padding-left: 0;
+  margin: 0;
 }
 
 .panels {
@@ -151,7 +159,7 @@ font-family: Poppins, sans-serif;
 #flowerImage
 {
     height: 40vh;
-    width: 20vh;
+    width: 40vh;
     padding-top: 100px;
 }
 
@@ -181,7 +189,7 @@ font-family: Poppins, sans-serif;
   }
 
 #colors {
-    height: 50vh;
+    height: 25vh;
 }
 
 /* color swatches */
@@ -319,7 +327,7 @@ font-family: Poppins, sans-serif;
 
   /* Resources page */
   .main-content-resources{
-    display: flex;
+       display: flex;
     justify-content: space-around;
     /* flex-direction: column; */
     flex-wrap: wrap;
