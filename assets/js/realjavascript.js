@@ -14,6 +14,19 @@ function addTask() {
         checkbox.onclick = "greyoutLabel";
         // event listeners
 
+        // Add onchange event listener to checkbox
+        checkbox.addEventListener('change', function() {
+          if (this.checked) {
+            // Do something when checkbox is checked
+            console.log("Checkbox is checked");
+            doplantsparkle();
+          } 
+          else {
+            // Do something when checkbox is unchecked
+            console.log("Checkbox is unchecked");
+          }
+  });
+
         //put task text node and checkbox in label
         const tasklabel = document.createElement("label");
         tasklabel.appendChild(checkbox);
@@ -45,6 +58,9 @@ function clickoutside(element){
 }
 
 
+function doplantsparkle(){
+  console.log("doing plant sparkle things");
+}
 
 // adjusts the size and formatting of navbar on scroll
 window.onscroll = function() {scrollFunction()};
