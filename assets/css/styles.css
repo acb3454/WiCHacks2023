@@ -109,7 +109,13 @@ padding: 6px 12px;
 font-family: Poppins, sans-serif;
 }
 
-
+/* Panel 2 */
+#flowerImage
+{
+    height: 40vh;
+    width: 20vh;
+    padding-top: 100px;
+}
 
 #inputtask
 {
