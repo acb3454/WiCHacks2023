@@ -46,8 +46,7 @@ body {
 .main-content {
     display: flex;
     justify-content: space-around;
-    justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     width: 90vw;
     padding: 70px;
