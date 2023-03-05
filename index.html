@@ -41,6 +41,7 @@
 
 </script>
 
+
 <body>
 <div class="wapper">
     <nav id="navbar">
@@ -50,11 +51,9 @@
             <h2 id="nav-text-h2">By Emma, Aemilia and Amelia</h2>
         </div>
         <div id="meet-team">
-            <a href="resources.html" style="color:black">Resources |</a>
-            <a href="people.html" style="color:black;">Meet the Team |</a>
-            <a href="map.html" style="color:black;">Get Outside!</a>
+            <a href="people.html" style="color:black;">Meet the Team!</a>
             <!-- <img src="assets/media/leaf.png" alt="a green, diamond shaped leaf with a green stem"> -->
-        </div>
+        </nav>
     </nav>
     <div id="colors">
         <div id="dkgn" class="color-swatches"></div>
@@ -65,53 +64,48 @@
     </div>
     <div class="main-content">
         <!-- Panel 1 -->
-        <div class="panels" id="panel1" class="left-panel">
+        <div class="panels" class="left-panel">
             <form id="task-input-things">
-                <h3>How are you taking care of yourself today?</h3>
+                <h3>Today's Tasks:</h3>
                 <input type="text" id="task1" name="task1" placeholder="input your task here!">
                 <button type="button" id="inputtask" onclick="addTask();">Add to Tasklist!</button>
                 <br>
             </form>
         </div>
         <!-- Panel 2 -->
-        <div class="panels" id="panel2" class="right-panel">
+        <div class="panels" class="right-panel">
             <img id="flowerImage" src="assets/sprites/FlowerAssets/SunflowerFlower.png">
         </div>
         <!-- Panel 3 -->
-        <div class="panels" id="panel3" class="left-panel">
+        <div class="panels" class="left-panel">
             <a href="panel3.html">Panel3</a>
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <!-- seeing if a button could fix the changeflower()? -->
-                 <button class="carouselbutton" id="plant-pot-btn" onclick="changeplant(this);">
-                    <img id="plant-pot-img" src="assets/media/plant-pot.png" style="width:100%"alt="Green Succulent">
+                <button id="plant-pot-btn" onclick="changeflower(this);">
+                    <img id="plant-pot-img" src="assets/media/plant-pot.png" style="width:100%">
                 </button>
-                <div class="carouseltext">Green Succulent</div>
+                <div class="text">Green Succulent</div>
                 </div>
     
                 <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <button class="carouselbutton" id="plant-pot-btn" onclick="changeplant(this);" >
-                    <img id="plant-rose-img" src="assets/media/rose.png" style="width:100%" alt="Rose">
-                </button>
-                
-                <div class="carouseltext">Rose</div>
+                <img src="assets/media/rose.png" style="width:100%">
+                <div class="text">Rose</div>
                 </div>
     
                 <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <button class="carouselbutton" id="plant-pot-btn" onclick="changeplant(this);">
-                    <img id="sunflower-img" src="assets/media/sunflower.png" style="width:100%" alt="Sunflower">
-                </button>
-                <div class="carouseltext">Sunflower</div>
+                <img src="assets/media/sunflower.png" style="width:100%">
+                <div class="text">Sunflower</div>
                 </div>
     
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
     
-            </div> <!--end of slideshow-container div-->
+            </div> <!--end of slideshow-container div -->
     
             <br>
     
@@ -123,35 +117,44 @@
     
         </div> <!--end of panels div-->
         <!-- Panel 4 -->
-        <div class="panels" id="panel4" class="right-panel">
+        <div class="panels" class="right-panel">
             <!-- <a href="panel4.html">Panel4</a> -->
             <h3>Today's Water Intake</h3>
             <button class="outsidebutton" id="water1" onclick="addwater(this);">
-                <img class = "waterimage" src="assets/media/fullwater.png" alt="buttonpng" /> 
+                <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <button class="outsidebutton" id="water2" onclick="addwater(this);">
-                <img class = "waterimage" src="assets/media/fullwater.png" alt="buttonpng" /> 
+                <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <button class="outsidebutton" id="water3" onclick="addwater(this);">
-                <img class = "waterimage" src="assets/media/fullwater.png" alt="buttonpng" /> 
+                <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <button class="outsidebutton" id="water4" onclick="addwater(this);">
-                <img class = "waterimage" src="assets/media/fullwater.png" alt="buttonpng" /> 
+                <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <button class="outsidebutton" id="water5" onclick="addwater(this);">
-                <img class = "waterimage" src="assets/media/fullwater.png" alt="buttonpng" /> 
+                <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <button class="outsidebutton" id="water6" onclick="addwater(this);">
-                <img class = "waterimage" src="assets/media/fullwater.png" alt="buttonpng" /> 
+                <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <h3>Did you go outside today?</h3>
             <button class="outsidebutton" id="outsidebutton" onclick="addsun(this);">Yes!</button>
 
         </div>
 
+    
+    <div class="google-map">
+        <p>Self Care Example - Get out into nature!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23313.296941728702!2d-77.67990663830011!3d43.08008693052853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparks%20near%20me!5e0!3m2!1sen!2sus!4v1677979203241!5m2!1sen!2sus" 
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+   </div>
+
  
 
     </div> <!--end of main content div-->
+
+    <a href="resources.html">Resources</a>
 
         <footer>
             Hack created for WiCHacks 2023 at the Rochester Institute of Technology | Project ideated by Emma Edgar, Aemilia Blais and Amelia Caird
