@@ -47,7 +47,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 90vw;
-    padding: 50px;
+    padding: 70px;
 }
 
 .panels {
@@ -58,12 +58,23 @@ body {
     background-color: #bf9bebc5;
 }
 
+.left-panel {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.right-panel {
+    margin-right: 100px;
+    margin-right: 0px;
+}
+
 /* panel with the input box */
 #task-input-things {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 30px;
+    padding: 10px;
+    margin: 30px;
+    min-height: 3em;
 }
 
 /* elements in the input box */
