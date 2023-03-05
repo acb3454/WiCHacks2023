@@ -142,7 +142,7 @@ font-family: Poppins, sans-serif;
 
 /* color swatches */
 .color-swatches {
-    height:90px;
+    min-height:55px;
     transition: .4s;
 }
 #dkgn {
