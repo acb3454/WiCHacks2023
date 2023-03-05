@@ -87,7 +87,7 @@ body {
     padding-bottom: 10px;
     border-bottom: 1px solid black;
 }
-
+/* Panel 4 */
 .outsidebutton{
     background-color: #800080;
     color:white;
@@ -97,6 +97,10 @@ body {
     opacity: 0.6;
     transition: 0.3s;
     text-align: center;
+}
+
+.outsidebutton:hover{
+opacity:1;
 }
 
 /* Button and Input (Panel 1)*/
