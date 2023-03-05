@@ -197,6 +197,24 @@ font-family: Poppins, sans-serif;
     background-color: #9E7E51;
 }
 
+/*maps page mostly*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 20px;
+        height: 75vh;
+}
+    
+.iframe {
+  padding: 20px;
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
 /* image carousel for flowers */
 /* Slideshow container */
