@@ -53,11 +53,13 @@ function greyoutLabel() {
     }
 }
 
+//function to handle water tracking
 function addwater(element){
   element.style.opacity = 1;
   doplantwater();
 }
 
+//function to handle outdoors tracking
 function addsun(element){
   element.style.opacity = 1;
   doplantsun();
