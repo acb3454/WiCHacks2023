@@ -35,7 +35,7 @@ body {
 
 #nav-text h1{
     font-family: 'Abril Fatface', serif;
-    font-size: 7em;
+    font-size: 5.5em;
     transition: .4s;
 }
 
@@ -173,7 +173,7 @@ font-family: Poppins, sans-serif;
   }
 
 #colors {
-    height: 60vh;
+    height: 50vh;
 }
 
 /* color swatches */
@@ -312,4 +312,77 @@ font-family: Poppins, sans-serif;
 footer {
     height: auto;
     background-color: #bf9bebc5;
+}
+
+
+ /* these are the tablet rules */
+@media only screen and (max-width:1200px){
+    #navbar {
+      padding: 5px;
+  }
+
+  #navbar img {
+      height: 150px;
+      left: 15px;
+      top: 70px;
+  }
+
+  #nav-text h1{
+      font-size: 4em;
+  }
+
+  #nav-text h2{
+    font-size: 1.2em;
+  }
+
+  .main-content {
+    width: 100vw;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .panels {
+    margin: 20;
+  }
+
+  #colors {
+    height: 30vh;
+  }
+
+}
+
+
+ /* these are the tablet rules AND IN portrait mode */
+@media only screen and (max-width:1200px) and (orientation:portrait){
+  #navbar {
+    padding: 5px;
+  }
+
+  #navbar img {
+      height: 100px;
+      left: 30px;
+      top: 50px;
+  }
+
+  #nav-text h1{
+      font-size: 2.5em;
+  }
+
+  #nav-text h2{
+    font-size: 1.5em;
+  }
+
+  #colors {
+    height: 30vh;
+  }
+}
+
+/* these are the large tablet rules in landscape. width still applies to the short side of the phone though*/
+@media only screen and (max-width:800px) {}
+
+/* these are the phone rules in lanscape. */
+@media only screen and (max-width:415px) and (orientation:portrait){
+  
 }
