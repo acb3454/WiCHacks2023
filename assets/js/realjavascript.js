@@ -55,11 +55,38 @@ function greyoutLabel() {
 
 function clickoutside(element){
   element.style.opacity = 1;
+  doplantwater();
 }
 
 function doplantsparkle() {
   // Change photo in panel 2
   console.log("doing plant sparkle things");
+  const flowerphoto = document.getElementById("flowerImage");
+  const originalflower = flowerphoto.src;
+  console.log("current source " + flowerphoto.src);
+
+  flowerphoto.src = "assets/sprites/sparkle.png";
+  console.log("new source " + flowerphoto.src);
+
+  // Wait for 0.6 seconds and switch back to original photo
+  setTimeout(function() {
+    flowerphoto.src = originalflower + "?" + Date.now();
+  }, 600);
+}
+
+function changeplant(element){
+  // Change plant photo
+  console.log("switching out the plant");
+  const flowerphoto = document.getElementById("flowerImage");
+  console.log("current source " + flowerphoto.src);
+
+  flowerphoto.src = element.src;
+  console.log("new source " + flowerphoto.src);
+}
+
+function doplantwater() {
+  // Change photo in panel 2
+  console.log("doing plant watering");
   const flowerphoto = document.getElementById("flowerImage");
   const originalflower = flowerphoto.src;
   console.log("current source " + flowerphoto.src);
