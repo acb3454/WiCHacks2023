@@ -161,6 +161,13 @@ function scrollFunction() {
   }
 
 
+  //send a reminder to drink water after being on the website for 
+  document.getElementById('outsidebutton').onload = function() {setTimeout(drinkWaterReminder()), 2000};
+  function drinkWaterReminder() {
+    alert("Have you drank any water in the past 30 minutes? You have only drank X bottles of water today.");
+  }
+
+
   let slideIndex = 1;
   showSlides(slideIndex);
   
