@@ -46,6 +46,11 @@ body {
     transition: .4s;
 }
 
+#meet-team {
+  font-size: 18px;
+  text-decoration: none;
+}
+
 .main-content {
     width: 90vw;
     padding: 70px;
