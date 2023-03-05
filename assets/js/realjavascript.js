@@ -82,13 +82,19 @@ function doplantsparkle() {
 }
 
 function changeplant(element){
+  //if the flower in carousel is clicked
+  //set the img src in flowerphoto to the carousel img src
+  
   // Change plant photo
   console.log("switching out the plant");
   const flowerphoto = document.getElementById("flowerImage");
   console.log("current source " + flowerphoto.src);
 
+  //set the panel 2 main flower img src to the src from input img
   flowerphoto.src = element.src;
   console.log("new source " + flowerphoto.src);
+
+  
 }
 
 function doplantwater() {
