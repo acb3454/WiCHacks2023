@@ -53,9 +53,16 @@ function greyoutLabel() {
     }
 }
 
-function clickoutside(element){
+//function to handle water tracking
+function addwater(element){
   element.style.opacity = 1;
   doplantwater();
+}
+
+//function to handle outdoors tracking
+function addsun(element){
+  element.style.opacity = 1;
+  doplantsun();
 }
 
 function doplantsparkle() {
@@ -75,13 +82,19 @@ function doplantsparkle() {
 }
 
 function changeplant(element){
+  //if the flower in carousel is clicked
+  //set the img src in flowerphoto to the carousel img src
+  
   // Change plant photo
   console.log("switching out the plant");
   const flowerphoto = document.getElementById("flowerImage");
   console.log("current source " + flowerphoto.src);
 
+  //set the panel 2 main flower img src to the src from input img
   flowerphoto.src = element.src;
   console.log("new source " + flowerphoto.src);
+
+  
 }
 
 function doplantwater() {
@@ -91,7 +104,23 @@ function doplantwater() {
   const originalflower = flowerphoto.src;
   console.log("current source " + flowerphoto.src);
 
-  flowerphoto.src = "assets/sprites/sparkle.png";
+  flowerphoto.src = "assets/sprites/watering-can.png";
+  console.log("new source " + flowerphoto.src);
+  // Wait for 0.6 seconds and switch back to original photo
+  
+  setTimeout(function() {
+    flowerphoto.src = originalflower + "?" + Date.now();
+  }, 600);
+}
+
+function doplantsun() {
+  // Change photo in panel 2
+  console.log("giving the plant some sunshine");
+  const flowerphoto = document.getElementById("flowerImage");
+  const originalflower = flowerphoto.src;
+  console.log("current source " + flowerphoto.src);
+
+  flowerphoto.src = "assets/sprites/sun.png";
   console.log("new source " + flowerphoto.src);
   // Wait for 0.6 seconds and switch back to original photo
   
@@ -154,5 +183,5 @@ function scrollFunction() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
   }
-  
+
 }

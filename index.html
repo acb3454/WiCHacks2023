@@ -9,6 +9,36 @@
     <script src="assets/js/realjavascript.js"></script>
     <title>WiCHacks Plant Site</title>
 </head>
+<script>
+    let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+
 <body>
 <div class="wapper">
     <nav id="navbar">
@@ -84,35 +114,35 @@
         <div class="panels" class="right-panel">
             <!-- <a href="panel4.html">Panel4</a> -->
             <h3>Today's Water Intake</h3>
-            <button class="outsidebutton" id="water1" onclick="clickoutside(this);">
+            <button class="outsidebutton" id="water1" onclick="addwater(this);">
                 <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
-            <button class="outsidebutton" id="water2" onclick="clickoutside(this);">
+            <button class="outsidebutton" id="water2" onclick="addwater(this);">
                 <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
-            <button class="outsidebutton" id="water3" onclick="clickoutside(this);">
+            <button class="outsidebutton" id="water3" onclick="addwater(this);">
                 <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
-            <button class="outsidebutton" id="water4" onclick="clickoutside(this);">
+            <button class="outsidebutton" id="water4" onclick="addwater(this);">
                 <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
-            <button class="outsidebutton" id="water5" onclick="clickoutside(this);">
+            <button class="outsidebutton" id="water5" onclick="addwater(this);">
                 <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
-            <button class="outsidebutton" id="water6" onclick="clickoutside(this);">
+            <button class="outsidebutton" id="water6" onclick="addwater(this);">
                 <img class = "waterimage" src="assets\media\2044227.png" alt="buttonpng" /> 
             </button>
             <h3>Did you go outside today?</h3>
-            <button class="outsidebutton" id="outsidebutton" onclick="clickoutside(this);">Yes!</button>
+            <button class="outsidebutton" id="outsidebutton" onclick="addsun(this);">Yes!</button>
 
         </div>
 
     
-        <div class="google-map">
-            <p>Self Care Example - Get out into nature!</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23313.296941728702!2d-77.67990663830011!3d43.08008693052853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparks%20near%20me!5e0!3m2!1sen!2sus!4v1677979203241!5m2!1sen!2sus" 
-            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-        </div>
+    <div class="google-map">
+        <p>Self Care Example - Get out into nature!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d23313.296941728702!2d-77.67990663830011!3d43.08008693052853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sparks%20near%20me!5e0!3m2!1sen!2sus!4v1677979203241!5m2!1sen!2sus" 
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+   </div>
 
  
 
@@ -120,9 +150,10 @@
 
     <a href="resources.html">Resources</a>
 
-    <footer>
-        Hack created for WiCHacks 2023 at the Rochester Institute of Technology | Project ideated by Emma Edgar, Aemilia Blais and Amelia Caird
-    </footer>
+        <footer>
+            Hack created for WiCHacks 2023 at the Rochester Institute of Technology | Project ideated by Emma Edgar, Aemilia Blais and Amelia Caird
+        </footer>
+
 </div> <!--end of wrapper div-->
 </body>
 </html>
