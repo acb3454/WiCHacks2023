@@ -108,10 +108,14 @@ body {
     height: 70px;
   }
 
+.colors {
+    height: 60vh;
+}
 
 /* color swatches */
 .color-swatches {
-    height:50px;
+    height:90px;
+    transition: .4s;
 }
 #dkgn {
     background-color:#499E61; 
