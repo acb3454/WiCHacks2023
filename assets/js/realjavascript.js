@@ -79,6 +79,8 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "75px";
     document.getElementById("logo").style.left = "30px";
     document.getElementById("logo").style.top = "15px";
+    document.getElementById("colors-swatches").style.height = "1vh";
+
 
   } else { 
     //if the page has scrolled once but is back at the top. still overrides the initial styles
@@ -88,6 +90,8 @@ function scrollFunction() {
     document.getElementById("logo").style.height = "150px";
     document.getElementById("logo").style.left = "60px";
     document.getElementById("logo").style.top = "40px";
+    document.getElementById("colors-swatches").style.height = "55px";
+
 
   }
 }
